@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            tools:context="agha.kfupmscapp.Activities.DisplayNewsActivity.DisplayNews">
+
+            <ImageView
+                android:id="@+id/display_news_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/display_news_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/display_news_image"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Jan 11,2018"
+                android:fontFamily="@font/lemonada_semibold"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/display_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/display_news_date"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="إنطلاق بطولة معالي مدير الجامعة"
+                android:fontFamily="@font/lemonada_semibold"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_news_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/display_news_title"
+                android:layout_below="@+id/display_news_title"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/lemonada_semibold"
+                android:text="إنطلاق بطولة معالي مدير الجامعة"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-->
+    <LinearLayout
+        android:id="@+id/display_news_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLightGrayNavBar"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/display_news_nav_bar_main"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorLightGrayNavBar"
+            android:drawableTop="@drawable/ic_home_gray"
+            android:scaleType="center"
+            android:text="الرئيسية"
+            android:textColor="@color/colorDarkGrayNavBar"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/display_news_nav_bar_matches"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorLightGrayNavBar"
+            android:drawableTop="@drawable/ic_home_gray"
+            android:scaleType="center"
+            android:text="المباريات"
+            android:textColor="@color/colorDarkGrayNavBar"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/display_news_nav_bar_top_scorer"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorLightGrayNavBar"
+            android:drawableTop="@drawable/ic_scorers_gray"
+            android:scaleType="center"
+            android:text="الهدافين"
+            android:textColor="@color/colorDarkGrayNavBar"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <-->
+
+</RelativeLayout>

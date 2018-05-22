@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nav_menu_main"
+        android:title="الرئيسية"
+        android:icon="@drawable/ic_home_gray"/>
+
+    <item android:id="@+id/nav_menu_teams"
+        android:title="الفرق"
+        android:icon="@drawable/ic_person"/>
+
+    <item android:id="@+id/nav_menu_players"
+        android:title="اللاعبون"
+        android:icon="@drawable/team_icon"/>
+
+    <item android:id="@+id/nav_menu_matches"
+        android:title="المباريات"
+        android:icon="@drawable/football_icon"/>
+
+    <item android:id="@+id/nav_menu_news"
+        android:title="الأخبار"
+        android:icon="@drawable/ic_news"/>
+
+    <item android:id="@+id/nav_menu_scorers"
+        android:title="قائمة الهدافين"
+        android:icon="@drawable/ic_scorers_gray"/>
+
+    <item android:id="@+id/nav_menu_champions"
+        android:title="سجل الأبطال"
+        android:icon="@drawable/cup_icon"/>
+
+    <item android:id="@+id/nav_menu_groups"
+        android:title="المجموعات"
+        android:icon="@drawable/ic_group"/>
+
+    <item android:id="@+id/nav_menu_about"
+        android:title="عن النادي الرياضي"
+        android:icon="@drawable/ic_about"/>
+
+    <item android:id="@+id/nav_menu_dev"
+        android:title="فريق التطوير"
+        android:icon="@drawable/ic_code"/>
+
+</menu>

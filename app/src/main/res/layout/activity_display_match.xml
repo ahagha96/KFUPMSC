@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f3f3f"
+    tools:context="agha.kfupmscapp.Activities.ChampionsActivity.ChampoinsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorGreenGradientEnd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/lemonada_semibold"
+            android:gravity="center"
+            android:text="تفاصيل المباراة"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/match_card_header"
+                android:fontFamily="@font/lemonada_semibold"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/match_card_body"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/match_card_date"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/match_card_team_one_image"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/date"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/defualt_img" />
+
+                <TextView
+                    android:id="@+id/match_card_team_one_name"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/match_card_team_one_image"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/match_card_team_name"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:text=":"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/match_card_team_two_image"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/date"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/defualt_img" />
+
+                <TextView
+                    android:id="@+id/match_card_team_two_name"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/match_card_team_two_image"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/match_card_team_name"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/match_card_team_one_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/match_card_team_one_image"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:text="-"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/match_card_team_two_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toLeftOf="@id/match_card_team_two_image"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:text="-"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_one_description"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/match_card_team_one_name"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/match_desc"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/team_two_description"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/match_card_team_two_name"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/match_desc"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

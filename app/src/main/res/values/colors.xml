@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Auto generated colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#43a546</color>
+
+    <!-- Customized colors -->
+    <color name="colorDarkBackgroud">#1e1e1e</color>
+    <color name="colorLightGray">#aeaeae</color>
+    <color name="colorDarkGray">#737373</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGrayNavBar">#e2e2e2</color>
+    <color name="colorDarkGrayNavBar">#8e8e93</color>
+    <color name="colorBlue">#4a90e2</color>
+    <color name="colorBlueNavBar">#026cfe</color>
+    <color name="colorGreenGradientEnd">#43a546</color>
+    <color name="colorGreenGradientStart">#78d17c</color>
+    <color name="colorDarkTransparent">#66000000</color>
+    <color name="colorPlaceHolderDarkGray">#b3b3b3</color>
+    <color name="colorPlaceHolderLightGray">#d7d7d7</color>
+    <color name="colorRed">#c93f45</color>
+    <color name="colorGraySearchBar">#2b2b2c</color>
+    <color name="colorGreenTabView">#258427</color>
+
+
+</resources>

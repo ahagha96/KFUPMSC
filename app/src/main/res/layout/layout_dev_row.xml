@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/dev_listview"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/dev_text"
+        android:fontFamily="@font/lemonada_semibold"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/dev_role"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/dev_name"
+        android:background="@drawable/dev_text"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/lemonada_semibold"
+        android:textColor="@color/colorWhite"
+        android:textSize="8dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/dev_image"
+        android:src="@drawable/defualt_img"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/dev_role"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dev_email">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_mail"
+            android:layout_centerVertical="true"
+            android:id="@+id/mail_icon"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/dev_email"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/mail_icon"
+            android:fontFamily="@font/lemonada_semibold"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/twitter_icon"
+        android:src="@drawable/twitter"
+        android:background="@drawable/dev_twitter"
+        android:layout_toLeftOf="@id/email_view"
+        android:layout_below="@id/dev_role"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

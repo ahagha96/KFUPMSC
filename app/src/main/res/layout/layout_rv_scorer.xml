@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@android:color/transparent"
+    android:paddingLeft="10dp">
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="@drawable/scorer_right"
+        android:gravity="center"
+        android:text="1"
+        android:fontFamily="@font/lemonada_semibold"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:id="@+id/scorer_card_rank"
+        />
+
+    <RelativeLayout
+        android:id="@+id/scorer_main"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/scorer_body"
+        android:layout_toLeftOf="@id/scorer_card_rank"
+        android:layout_toRightOf="@id/score_layout"
+        android:elevation="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/scorer_card_player_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/football_icon"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/scorer_card_player_name"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/scorer_card_player_image"
+            android:gravity="center"
+            android:text="يعرب المصطفى"
+            android:fontFamily="@font/lemonada_semibold"
+            android:textColor="@color/colorDarkBackgroud"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/scorer_card_team_image"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/football_icon"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:id="@+id/scorer_card_team_name"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/scorer_card_team_image"
+            android:gravity="center"
+            android:text="2013"
+            android:textColor="@color/colorDarkBackgroud"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lemonada_semibold"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:background="@drawable/scorer_left"
+        android:id="@+id/score_layout"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/football_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/football_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scorer_card_goals"
+            android:text="13"
+            android:fontFamily="@font/lemonada_semibold"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/football_icon"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

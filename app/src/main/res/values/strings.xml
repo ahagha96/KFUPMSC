@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">KFUPMSC</string>
+    <string name="title_activity_matches">NextMatchesActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <item type="id" name="title1" />
+    <item type="id" name="date1" />
+    <item type="id" name="firstTeamName1" />
+    <item type="id" name="secondTeamName1" />
+    <item type="id" name="firstTeamScore1" />
+    <item type="id" name="secondTeamScore1" />
+    <item type="id" name="firstTeamLogo1" />
+    <item type="id" name="secondTeamLogo1" />
+    <item type="id" name="firstTeamDes1" />
+    <item type="id" name="secondTeamDes1" />
+
+</resources>

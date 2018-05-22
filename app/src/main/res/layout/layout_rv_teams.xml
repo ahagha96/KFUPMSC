@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/main_layout_rv_team_image"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/place_holder_background"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/main_layout_rv_team_name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/lemonada_semibold"
+        android:layout_below="@id/main_layout_rv_team_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBlue"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            tools:context="agha.kfupmscapp.Activities.AboutSportClubActivity.AboutClubActivity">
+
+            <RelativeLayout
+                android:id="@+id/about_club_layout_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorGreenGradientEnd">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:gravity="center"
+                    android:text="عن النادي"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/all_players_burger"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_menu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about_club"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_club_layout_toolbar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#828282"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/club_logo"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/club_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/club_logo"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="الموقع الرسمي لبطولات النادي الرياضي في جامعة الملك فهد"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/contact_us_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/about_club"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lemonada_semibold"
+                android:text="تواصل معنا"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/about_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/contact_us_text"
+                android:background="@color/colorWhite" />
+
+            <RelativeLayout
+                android:id="@+id/rv_twitter"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/about_divider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/display_team_boxes">
+
+                <ImageView
+                    android:id="@+id/twitter_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/twitter" />
+
+                <TextView
+                    android:id="@+id/twitter_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/twitter_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:text="\@kfupmsc"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rv_snap"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/about_divider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/rv_twitter"
+                android:background="@drawable/display_team_boxes">
+
+                <ImageView
+                    android:id="@+id/snap_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/snap" />
+
+                <TextView
+                    android:id="@+id/snap_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snap_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:text="\@kfupmsc"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rv_insta"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/about_divider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/rv_twitter"
+                android:background="@drawable/display_team_boxes">
+
+                <ImageView
+                    android:id="@+id/insta_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/insta" />
+
+                <TextView
+                    android:id="@+id/insta_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/insta_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lemonada_semibold"
+                    android:text="\@kfupmsc"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_menu_all_players"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#3f3f3f"
+        android:clipToPadding="false"
+        android:layoutDirection="rtl"
+        android:paddingTop="120dp"
+        android:textDirection="rtl"
+        app:itemTextAppearance="@style/NavigationDrawerStyle"
+        app:itemTextColor="@color/colorWhite"
+        app:itemIconTint="@color/colorWhite"
+        app:menu="@menu/nav_menu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="-120dp"
+            android:background="#3f3f3f">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/club_logo" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
